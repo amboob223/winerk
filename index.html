@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>jape</title>
+</head>
+<body>
+    <form action="http://localhost:5000/travelers" enctype="multipart/form-data">
+        <input type="text" name="name" id="name">
+        <input type="text" name="bags" id="bags">
+        <input type="text" name="origin" id="origin">
+        <input type="text" name="destination" id="destination">
+        <input type ="file" name="pic" id="pic">
+        <button id="btn">click</button> 
+        <!-- hre isthe button already has type submit which send a request with form data 
+        -->
+        </form>
+<br>
+<h1>
+    users
+</h1>
+        <form action="http://localhost:5000/users" enctype="multipart/form-data">
+            <input type="text" name="uname" id="uname">
+            <input type="text" name="ubags" id="ubags">
+            <input type="text" name="udestination" id="udestination">
+            <input type="text" name="uorigin" id="uorigin">
+            <input type="file" name="uimage" id="uimage">
+            <button id="users">users</button>
+        </form>
+        
+    <script src="index.js"></script>
+</body>
+</html>
